@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="row-12">
-                <form action="form.php">
+                <form action="form.php" method="POST">    
 
                 </form>
 
