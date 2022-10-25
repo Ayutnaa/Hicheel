@@ -9,12 +9,49 @@
   </head>
 </head>
 <body>
+     <?php include 'helpers.php'; ?>
+    <H1>
+         <?php include 'formhvleenavalt.php';?>
+    </H1>
     bnbn
     <div class="container">
         <div class="row">
             <div class="row-12">
-                <form action="form.php" method="POST">    
+                <?php include 'inputs.php'; ?>
+                <form action="index.php?haanaas=index" method="POST">
+                <input type="password" name="password"/>
+                <?php hr(); ?>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I have a bike</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I have a car</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> I have a boat</label><br>
+                         
 
+                <?php hr(); ?>
+                <div class="form-check">
+                    <input type="form-check-input" type="radio" name="huis" id=flexradio1 value="male">
+                    <label class="form-check-label" for=flexradio1>
+                        male
+                    </label>
+                    </div>
+                
+                    <div class="form-check">
+                    <input type="form-check-input" type="radio" name="huis" id=flexradio2 value="female" checked>
+                    <label class="form-check-label" for=flexradio2>
+                        female
+                    </label>
+                </div>
+                <?php hr(); ?>
+                <label for="customRange1" class="form-label">Example range</label>
+                <input type="range" name="range" class="form-range" id="customRange1" min="0" max="10" step="0.5">
+
+                <?php hr(); ?>
+                <input type="haanaas" value="index.php" type="hidden"> 
+                <input type="submit">
+
+                
                 </form>
 
             </div>

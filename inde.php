@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <form class="login" id="register" action="/form.php" method="GET">
+    <form class="login" id="register" action="/form.php" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
